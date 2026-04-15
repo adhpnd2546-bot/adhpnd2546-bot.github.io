@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Profil Pribadi</h1>
+  <p>Selamat datang di halaman profil saya</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#profil">Profil</a></li>
+    <li><a href="#biodata">Biodata</a></li>
+    <li><a href="#skill">Skill</a></li>
+    <li><a href="#kontak">Kontak</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="profil">
+    <h2>Tentang Saya</h2>
+    <article>
+      <img src="WhatsApp Image 2026-03-15 at 21.16.45.jpeg" width="150">
+      <p>
+        Perkenalkan, saya Adhiyatma Pandu Hermansyah, mahasiswa ITSK Dr Soepraoen Malang.
+      </p>
+    </article>
+  </section>
+
+  <section id="biodata">
+    <h2>Biodata</h2>
+    <ul>
+      <li>Nama: Adhiyatma Pandu Hermansyah</li>
+      <li>Umur: 20 Tahun</li>
+      <li>Jurusan: Informatika</li>
+      <li>Kota: Malang</li>
+    </ul>
+  </section>
+
+  <section id="skill">
+    <h2>Skill</h2>
+    <article>
+      <h3>Web Development</h3>
+      <p>HTML & PHP dasar</p>
+    </article>
+  </section>
+
+  <!-- FORM KONTAK -->
+  <section id="kontak">
+    <h2>Form Kontak</h2>
+
+    <form id="contactForm">
+      <label>Nama</label>
+      <input type="text" id="nama">
+      <small class="error" id="errorNama"></small>
+
+      <label>Email</label>
+      <input type="email" id="email">
+      <small class="error" id="errorEmail"></small>
+
+      <label>Nomor HP</label>
+      <input type="tel" id="hp">
+      <small class="error" id="errorHP"></small>
+
+      <label>Pesan</label>
+      <textarea id="pesan"></textarea>
+      <small class="error" id="errorPesan"></small>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <p id="notifikasi"></p>
+
+    <h3>Preview Pesan</h3>
+    <p id="preview"></p>
+
+    <h3>Daftar Pesan</h3>
+    <ul id="listPesan"></ul>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Adhiyatma</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
